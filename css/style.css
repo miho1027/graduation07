@@ -575,7 +575,7 @@ template {
   font-size: 30px;
   color: #444;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 85px;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -584,7 +584,7 @@ template {
   color: #444;
   text-align: center;
   font-weight: bold;
-  margin-top: 65px;
+  margin-top: 70px;
   letter-spacing: 0.1em;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -641,8 +641,6 @@ template {
   height: 200px;
   border-radius: 50%;
   z-index: -1;
-  -webkit-box-shadow: -10px 10px 15px -15px rgba(0, 0, 0, 0.5);
-          box-shadow: -10px 10px 15px -15px rgba(0, 0, 0, 0.5);
 }
 
 .mv .c01 {
@@ -652,6 +650,8 @@ template {
   left: 8%;
   -webkit-transform: translate(-36%, -8%);
           transform: translate(-36%, -8%);
+  -webkit-box-shadow: 0px 0px 30px #ffa6a6;
+          box-shadow: 0px 0px 30px #ffa6a6;
 }
 
 .mv .c02 {
@@ -661,6 +661,8 @@ template {
   left: 22%;
   -webkit-transform: translate(-40%, -20%);
           transform: translate(-40%, -20%);
+  -webkit-box-shadow: 0px 0px 30px #ffcb9a;
+          box-shadow: 0px 0px 30px #ffcb9a;
 }
 
 .mv .c03 {
@@ -670,6 +672,8 @@ template {
   left: 36%;
   -webkit-transform: translate(-45%, -36%);
           transform: translate(-45%, -36%);
+  -webkit-box-shadow: 0px 0px 30px #fff8b7;
+          box-shadow: 0px 0px 30px #fff8b7;
 }
 
 .mv .c04 {
@@ -679,33 +683,41 @@ template {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 30px #cbf1cb;
+          box-shadow: 0px 0px 30px #cbf1cb;
 }
 
 .mv .c05 {
   background: rgba(193, 253, 255, 0.8);
   position: absolute;
-  top: 55%;
+  top: 53%;
   left: 64%;
-  -webkit-transform: translate(-55%, -64%);
-          transform: translate(-55%, -64%);
+  -webkit-transform: translate(-53%, -64%);
+          transform: translate(-53%, -64%);
+  -webkit-box-shadow: 0px 0px 30px #c1fdff;
+          box-shadow: 0px 0px 30px #c1fdff;
 }
 
 .mv .c06 {
   background: rgba(161, 205, 255, 0.8);
   position: absolute;
-  top: 60%;
+  top: 58%;
   left: 78%;
-  -webkit-transform: translate(-60%, -78%);
-          transform: translate(-60%, -78%);
+  -webkit-transform: translate(-58%, -78%);
+          transform: translate(-58%, -78%);
+  -webkit-box-shadow: 0px 0px 30px #a1cdff;
+          box-shadow: 0px 0px 30px #a1cdff;
 }
 
 .mv .c07 {
   background: rgba(227, 155, 255, 0.8);
   position: absolute;
-  top: 65%;
+  top: 63%;
   left: 92%;
-  -webkit-transform: translate(-65%, -92%);
-          transform: translate(-65%, -92%);
+  -webkit-transform: translate(-63%, -92%);
+          transform: translate(-63%, -92%);
+  -webkit-box-shadow: 0px 0px 30px #e39bff;
+          box-shadow: 0px 0px 30px #e39bff;
 }
 
 .mv__list {

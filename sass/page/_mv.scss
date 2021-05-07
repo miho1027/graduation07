@@ -5,7 +5,7 @@
     font-size: 30px;
     color: #444;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 85px;
     font-family: $font_ja;
   }
   .mv__ttl{
@@ -13,7 +13,7 @@
     color: #444;
     text-align: center;
     font-weight: bold;
-    margin-top: 65px;
+    margin-top: 70px;
     letter-spacing: 0.1em;
     font-family: $font_ja;
   }
@@ -43,7 +43,6 @@
     height: 200px;
     border-radius: 50%;
     z-index: -1;
-    box-shadow: -10px 10px 15px -15px rgba(0,0,0,0.5);
   }
   .c01{
     position: absolute;
@@ -51,6 +50,7 @@
     top: 36%;
     left: 8%;
     transform: translate(-36%,-8%);
+    box-shadow:0px 0px 30px rgb(255, 166, 166);
   }
   .c02{
     background: rgba(255, 203, 154, 0.9);
@@ -58,6 +58,7 @@
     top: 40%;
     left: 22%;
     transform: translate(-40%,-20%);
+    box-shadow:0px 0px 30px rgb(255, 203, 154);
   }
   .c03{
     background: rgba(255, 248, 183, 0.9);
@@ -65,6 +66,7 @@
     top: 45%;
     left: 36%;
     transform: translate(-45%,-36%);
+    box-shadow:0px 0px 30px rgb(255, 248, 183);
   }
   .c04{
     background: rgba(203, 241, 203, 0.8);
@@ -72,27 +74,31 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    box-shadow:0px 0px 30px rgb(203, 241, 203);
   }
   .c05{
     background: rgba(193, 253, 255,0.8);
     position: absolute;
-    top: 55%;
+    top: 53%;
     left: 64%;
-    transform: translate(-55%,-64%);
+    transform: translate(-53%,-64%);
+    box-shadow:0px 0px 30px rgb(193, 253, 255);
   }
   .c06{
     background: rgba(161, 205, 255, 0.8);
     position: absolute;
-    top: 60%;
+    top: 58%;
     left: 78%;
-    transform: translate(-60%,-78%);
+    transform: translate(-58%,-78%);
+    box-shadow:0px 0px 30px rgb(161, 205, 255);
   }
   .c07{
     background: rgba(227, 155, 255, 0.8);
     position: absolute;
-    top: 65%;
+    top: 63%;
     left: 92%;
-    transform: translate(-65%,-92%);
+    transform: translate(-63%,-92%);
+    box-shadow:0px 0px 30px rgb(227, 155, 255);
   }
   // .scroll {
   //   position: absolute;
