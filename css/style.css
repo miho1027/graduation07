@@ -568,7 +568,7 @@ template {
 
 .mv {
   width: 100%;
-  height: 530px;
+  height: 560px;
   border: 20px solid #444;
 }
 
@@ -648,56 +648,72 @@ template {
 .mv .c01 {
   position: absolute;
   background: rgba(255, 166, 166, 0.7);
-  top: 185px;
-  left: 400px;
+  top: 40%;
+  left: 38%;
+  -webkit-transform: translate(-40%, -38%);
+          transform: translate(-40%, -38%);
 }
 
 .mv .c02 {
   background: rgba(255, 203, 154, 0.9);
   position: absolute;
-  top: 185px;
-  left: 460px;
+  top: 41%;
+  left: 42%;
+  -webkit-transform: translate(-41%, -42%);
+          transform: translate(-41%, -42%);
 }
 
 .mv .c03 {
   background: rgba(255, 248, 183, 0.9);
   position: absolute;
-  top: 185px;
-  left: 520px;
+  top: 42%;
+  left: 46%;
+  -webkit-transform: translate(-42%, -46%);
+          transform: translate(-42%, -46%);
 }
 
 .mv .c04 {
   background: rgba(203, 241, 203, 0.8);
   position: absolute;
-  top: 185px;
-  left: 580px;
+  top: 43%;
+  left: 51%;
+  -webkit-transform: translate(-43%, -51%);
+          transform: translate(-43%, -51%);
 }
 
 .mv .c05 {
   background: rgba(193, 253, 255, 0.8);
   position: absolute;
-  top: 185px;
-  left: 640px;
+  top: 44%;
+  left: 55%;
+  -webkit-transform: translate(-44%, -55%);
+          transform: translate(-44%, -55%);
 }
 
 .mv .c06 {
   background: rgba(161, 205, 255, 0.8);
   position: absolute;
-  top: 185px;
-  left: 700px;
+  top: 45%;
+  left: 59%;
+  -webkit-transform: translate(-45%, -59%);
+          transform: translate(-45%, -59%);
 }
 
 .mv .c07 {
   background: rgba(227, 155, 255, 0.8);
   position: absolute;
-  top: 185px;
-  left: 760px;
+  top: 46%;
+  left: 63%;
+  -webkit-transform: translate(-46%, -63%);
+          transform: translate(-46%, -63%);
 }
 
 .mv .scroll {
   position: absolute;
-  bottom: 140px;
-  left: 600px;
+  top: 72%;
+  left: 51%;
+  -webkit-transform: translate(-72%, -51%);
+          transform: translate(-72%, -51%);
   width: 3em;
   height: 3em;
   border: 1px solid #444;
@@ -779,7 +795,7 @@ template {
   display: flex;
   background: #555;
   z-index: -1000;
-  margin-top: 180px;
+  margin-top: 190px;
   padding-left: 10px;
   padding-top: 8px;
 }
