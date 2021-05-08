@@ -575,7 +575,11 @@ template {
   font-size: 30px;
   color: #444;
   text-align: center;
-  margin-top: 7%;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  -webkit-transform: translate(-30%, -45%);
+          transform: translate(-30%, -45%);
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -584,7 +588,11 @@ template {
   color: #444;
   text-align: center;
   font-weight: bold;
-  margin-top: 6%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   letter-spacing: 0.1em;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -593,7 +601,12 @@ template {
   font-size: 24px;
   color: #444;
   text-align: center;
-  margin-top: 6%;
+  position: absolute;
+  letter-spacing: 0.05em;
+  top: 70%;
+  left: 52%;
+  -webkit-transform: translate(-70%, -52%);
+          transform: translate(-70%, -52%);
   font-family: "Noto Sans JP", sans-serif;
 }
 
