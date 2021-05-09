@@ -678,6 +678,12 @@ template {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .mv {
+    height: 500px;
+  }
+}
+
 .mv .site__ttl {
   font-size: 30px;
   color: #444;
@@ -702,7 +708,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv .site__ttl {
-    top: 38%;
+    top: 25%;
     left: 45%;
     -webkit-transform: translate(-38%, -45%);
             transform: translate(-38%, -45%);
@@ -733,6 +739,10 @@ template {
 @media screen and (max-width: 767px) {
   .mv .mv__ttl {
     font-size: 50px;
+    top: 35%;
+    left: 47%;
+    -webkit-transform: translate(-35%, -47%);
+            transform: translate(-35%, -47%);
   }
 }
 
@@ -757,10 +767,10 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv .mv__date {
-    top: 61%;
-    left: 52%;
-    -webkit-transform: translate(-61%, -52%);
-            transform: translate(-61%, -52%);
+    top: 47%;
+    left: 50%;
+    -webkit-transform: translate(-47%, -50%);
+            transform: translate(-47%, -50%);
     font-size: 16px;
   }
 }
@@ -847,10 +857,10 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv .c01 {
-    top: 44%;
-    left: 9%;
-    -webkit-transform: translate(-44%, -9%);
-            transform: translate(-44%, -9%);
+    top: 32%;
+    left: 14%;
+    -webkit-transform: translate(-32%, -14%);
+            transform: translate(-32%, -14%);
   }
 }
 
@@ -876,10 +886,10 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv .c02 {
-    top: 46%;
-    left: 22%;
-    -webkit-transform: translate(-46%, -22%);
-            transform: translate(-46%, -22%);
+    top: 33%;
+    left: 25%;
+    -webkit-transform: translate(-33%, -25%);
+            transform: translate(-33%, -25%);
   }
 }
 
@@ -905,20 +915,20 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv .c03 {
-    top: 48%;
+    top: 35%;
     left: 36%;
-    -webkit-transform: translate(-48%, -36%);
-            transform: translate(-48%, -36%);
+    -webkit-transform: translate(-35%, -36%);
+            transform: translate(-35%, -36%);
   }
 }
 
 .mv .c04 {
   background: rgba(203, 241, 203, 0.8);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 36%;
+  left: 47%;
+  -webkit-transform: translate(-36%, -47%);
+          transform: translate(-36%, -47%);
   -webkit-box-shadow: 0px 0px 30px #cbf1cb;
           box-shadow: 0px 0px 30px #cbf1cb;
 }
@@ -945,10 +955,10 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv .c05 {
-    top: 52%;
-    left: 64%;
-    -webkit-transform: translate(-52%, -64%);
-            transform: translate(-52%, -64%);
+    top: 38%;
+    left: 60%;
+    -webkit-transform: translate(-38%, -60%);
+            transform: translate(-38%, -60%);
   }
 }
 
@@ -974,10 +984,10 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv .c06 {
-    top: 54%;
-    left: 77%;
-    -webkit-transform: translate(-54%, -77%);
-            transform: translate(-54%, -77%);
+    top: 39%;
+    left: 70%;
+    -webkit-transform: translate(-39%, -70%);
+            transform: translate(-39%, -70%);
   }
 }
 
@@ -1003,10 +1013,10 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv .c07 {
-    top: 56%;
-    left: 90%;
-    -webkit-transform: translate(-56%, -90%);
-            transform: translate(-56%, -90%);
+    top: 41%;
+    left: 80%;
+    -webkit-transform: translate(-41%, -80%);
+            transform: translate(-41%, -80%);
   }
 }
 
