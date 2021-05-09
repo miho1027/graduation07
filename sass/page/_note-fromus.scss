@@ -17,6 +17,9 @@
   color: #444;
   font-family: $font_en;
   font-weight: bold;
+  @include mq(sp){
+    font-size: 28px;
+    }
 }
 .note-message{
   display: flex;

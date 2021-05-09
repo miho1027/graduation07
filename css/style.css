@@ -516,6 +516,15 @@ template {
   margin: 10px 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .header .site-logo {
+    width: 60px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
 .header nav {
   display: inline-block;
   -webkit-transition: all 0.3s;
@@ -558,6 +567,103 @@ template {
   border-bottom: 2px solid #88c9ff;
 }
 
+.header .hamburger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.header .h-span {
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: #333;
+  position: absolute;
+  right: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.header .hamburger:hover .h-span:nth-child(2) {
+  left: 15px;
+}
+
+.header .hamburger .h-span:nth-child(1) {
+  top: 10px;
+}
+
+.header .hamburger .h-span:nth-child(2) {
+  top: 20px;
+}
+
+.header .hamburger .h-span:nth-child(3) {
+  top: 30px;
+}
+
+.header .hamburger.active .h-span:nth-child(1) {
+  top: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .hamburger.active .h-span:nth-child(2) {
+  right: 60px;
+  opacity: 0;
+}
+
+.header .hamburger.active .h-span:nth-child(3) {
+  top: 20px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header body.hidden {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1179px) {
+  .header .header__nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 998;
+    background: #fff;
+    display: none;
+  }
+  .header nav {
+    position: absolute;
+    content: "";
+    top: 65%;
+    left: 52%;
+    -webkit-transform: translate(-65%, -52%);
+            transform: translate(-65%, -52%);
+    height: 100%;
+    text-align: center;
+  }
+  .header .header__list {
+    display: block;
+    margin: 0 auto;
+    line-height: 60px;
+  }
+  .header .nav__link {
+    z-index: 1000;
+  }
+  .header .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .header .header-nav {
+    display: block !important;
+  }
+}
+
 .footer {
   text-align: center;
   font-size: 0.7em;
@@ -569,6 +675,7 @@ template {
 .mv {
   width: 100%;
   height: 600px;
+  position: relative;
 }
 
 .mv .site__ttl {
@@ -581,6 +688,26 @@ template {
   -webkit-transform: translate(-30%, -45%);
           transform: translate(-30%, -45%);
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media screen and (max-width: 1179px) {
+  .mv .site__ttl {
+    top: 28%;
+    left: 43%;
+    -webkit-transform: translate(-28%, -43%);
+            transform: translate(-28%, -43%);
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv .site__ttl {
+    top: 38%;
+    left: 45%;
+    -webkit-transform: translate(-38%, -45%);
+            transform: translate(-38%, -45%);
+    font-size: 16px;
+  }
 }
 
 .mv .mv__ttl {
@@ -597,6 +724,18 @@ template {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@media screen and (max-width: 1179px) {
+  .mv .mv__ttl {
+    size: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv .mv__ttl {
+    font-size: 50px;
+  }
+}
+
 .mv .mv__date {
   font-size: 24px;
   color: #444;
@@ -608,6 +747,22 @@ template {
   -webkit-transform: translate(-70%, -52%);
           transform: translate(-70%, -52%);
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media screen and (max-width: 1179px) {
+  .mv .mv__date {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv .mv__date {
+    top: 61%;
+    left: 52%;
+    -webkit-transform: translate(-61%, -52%);
+            transform: translate(-61%, -52%);
+    font-size: 16px;
+  }
 }
 
 .mv .fadein {
@@ -656,6 +811,20 @@ template {
   z-index: -1;
 }
 
+@media screen and (max-width: 1179px) {
+  .mv .circle {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv .circle {
+    width: 70px;
+    height: 70px;
+  }
+}
+
 .mv .c01 {
   position: absolute;
   background: rgba(255, 166, 166, 0.7);
@@ -665,6 +834,24 @@ template {
           transform: translate(-36%, -8%);
   -webkit-box-shadow: 0px 0px 30px #ffa6a6;
           box-shadow: 0px 0px 30px #ffa6a6;
+}
+
+@media screen and (max-width: 1179px) {
+  .mv .c01 {
+    top: 40%;
+    left: 8%;
+    -webkit-transform: translate(-40%, -8%);
+            transform: translate(-40%, -8%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv .c01 {
+    top: 44%;
+    left: 9%;
+    -webkit-transform: translate(-44%, -9%);
+            transform: translate(-44%, -9%);
+  }
 }
 
 .mv .c02 {
@@ -678,6 +865,24 @@ template {
           box-shadow: 0px 0px 30px #ffcb9a;
 }
 
+@media screen and (max-width: 1179px) {
+  .mv .c02 {
+    top: 43%;
+    left: 22%;
+    -webkit-transform: translate(-43%, -22%);
+            transform: translate(-43%, -22%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv .c02 {
+    top: 46%;
+    left: 22%;
+    -webkit-transform: translate(-46%, -22%);
+            transform: translate(-46%, -22%);
+  }
+}
+
 .mv .c03 {
   background: rgba(255, 248, 183, 0.9);
   position: absolute;
@@ -687,6 +892,24 @@ template {
           transform: translate(-45%, -36%);
   -webkit-box-shadow: 0px 0px 30px #fff8b7;
           box-shadow: 0px 0px 30px #fff8b7;
+}
+
+@media screen and (max-width: 1179px) {
+  .mv .c03 {
+    top: 46%;
+    left: 36%;
+    -webkit-transform: translate(-46%, -36%);
+            transform: translate(-46%, -36%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv .c03 {
+    top: 48%;
+    left: 36%;
+    -webkit-transform: translate(-48%, -36%);
+            transform: translate(-48%, -36%);
+  }
 }
 
 .mv .c04 {
@@ -711,6 +934,24 @@ template {
           box-shadow: 0px 0px 30px #c1fdff;
 }
 
+@media screen and (max-width: 1179px) {
+  .mv .c05 {
+    top: 54%;
+    left: 64%;
+    -webkit-transform: translate(-54%, -64%);
+            transform: translate(-54%, -64%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv .c05 {
+    top: 52%;
+    left: 64%;
+    -webkit-transform: translate(-52%, -64%);
+            transform: translate(-52%, -64%);
+  }
+}
+
 .mv .c06 {
   background: rgba(161, 205, 255, 0.8);
   position: absolute;
@@ -722,6 +963,24 @@ template {
           box-shadow: 0px 0px 30px #a1cdff;
 }
 
+@media screen and (max-width: 1179px) {
+  .mv .c06 {
+    top: 57%;
+    left: 78%;
+    -webkit-transform: translate(-57%, -78%);
+            transform: translate(-57%, -78%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv .c06 {
+    top: 54%;
+    left: 77%;
+    -webkit-transform: translate(-54%, -77%);
+            transform: translate(-54%, -77%);
+  }
+}
+
 .mv .c07 {
   background: rgba(227, 155, 255, 0.8);
   position: absolute;
@@ -731,6 +990,24 @@ template {
           transform: translate(-63%, -92%);
   -webkit-box-shadow: 0px 0px 30px #e39bff;
           box-shadow: 0px 0px 30px #e39bff;
+}
+
+@media screen and (max-width: 1179px) {
+  .mv .c07 {
+    top: 60%;
+    left: 92%;
+    -webkit-transform: translate(-60%, -92%);
+            transform: translate(-60%, -92%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mv .c07 {
+    top: 56%;
+    left: 90%;
+    -webkit-transform: translate(-56%, -90%);
+            transform: translate(-56%, -90%);
+  }
 }
 
 .mv__list {
@@ -769,9 +1046,21 @@ template {
   background: #FFEDE0;
 }
 
+@media screen and (max-width: 767px) {
+  .member {
+    height: 650px;
+  }
+}
+
 .member .sub__ttl {
   text-align: center;
   padding-top: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .member .sub__ttl {
+    padding-top: 60px;
+  }
 }
 
 .member .member__content {
@@ -785,6 +1074,20 @@ template {
   text-align: center;
   -webkit-box-shadow: -10px 10px 15px -10px rgba(0, 0, 0, 0.5);
           box-shadow: -10px 10px 15px -10px rgba(0, 0, 0, 0.5);
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 1179px) {
+  .member .member__content {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .member .member__content {
+    width: 300px;
+    height: 430px;
+  }
 }
 
 .member .member__content-ttl {
@@ -792,6 +1095,18 @@ template {
   font-size: 24px;
   color: #444;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media screen and (max-width: 1179px) {
+  .member .member__content-ttl {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .member .member__content-ttl {
+    font-size: 14px;
+  }
 }
 
 .member .member__content-txt {
@@ -802,6 +1117,18 @@ template {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@media screen and (max-width: 1179px) {
+  .member .member__content-txt {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .member .member__content-txt {
+    font-size: 11px;
+  }
+}
+
 .member .section__ttl {
   display: inline-block;
   font-size: 36px;
@@ -810,6 +1137,12 @@ template {
   color: #444;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1179px) {
+  .member .section__ttl {
+    font-size: 24px;
+  }
 }
 
 .member .section__btn {
@@ -828,6 +1161,14 @@ template {
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 1179px) {
+  .member .section__btn {
+    font-size: 12px;
+    width: 120px;
+    height: 35px;
+  }
+}
+
 .member .section__btn::before {
   position: absolute;
   content: "▲";
@@ -838,6 +1179,13 @@ template {
   top: 11px;
   left: 105px;
   z-index: 100;
+}
+
+@media screen and (max-width: 1179px) {
+  .member .section__btn::before {
+    font-size: 12px;
+    left: 90px;
+  }
 }
 
 .member .section__btn::after {
@@ -882,9 +1230,21 @@ template {
   background: #FFF8EE;
 }
 
+@media screen and (max-width: 767px) {
+  .tosensei {
+    height: 520px;
+  }
+}
+
 .tosensei .sub__ttl {
   text-align: center;
   padding-top: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .tosensei .sub__ttl {
+    padding-top: 60px;
+  }
 }
 
 .tosensei .tosensei__content {
@@ -899,11 +1259,36 @@ template {
           box-shadow: -10px 10px 15px -10px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 1179px) {
+  .tosensei .tosensei__content {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tosensei .tosensei__content {
+    width: 300px;
+    height: 280px;
+  }
+}
+
 .tosensei .tosensei__content-ttl {
   margin-top: 30px;
   font-size: 24px;
   color: #444;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media screen and (max-width: 1179px) {
+  .tosensei .tosensei__content-ttl {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tosensei .tosensei__content-ttl {
+    font-size: 14px;
+  }
 }
 
 .tosensei .tosensei__content-txt {
@@ -914,6 +1299,18 @@ template {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@media screen and (max-width: 1179px) {
+  .tosensei .tosensei__content-txt {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tosensei .tosensei__content-txt {
+    font-size: 11px;
+  }
+}
+
 .tosensei .section__ttl {
   display: inline-block;
   font-size: 36px;
@@ -922,6 +1319,12 @@ template {
   color: #444;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1179px) {
+  .tosensei .section__ttl {
+    font-size: 24px;
+  }
 }
 
 .tosensei .section__btn {
@@ -940,6 +1343,14 @@ template {
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 1179px) {
+  .tosensei .section__btn {
+    font-size: 12px;
+    width: 120px;
+    height: 35px;
+  }
+}
+
 .tosensei .section__btn::before {
   position: absolute;
   content: "▲";
@@ -950,6 +1361,13 @@ template {
   top: 11px;
   left: 105px;
   z-index: 100;
+}
+
+@media screen and (max-width: 1179px) {
+  .tosensei .section__btn::before {
+    font-size: 12px;
+    left: 90px;
+  }
 }
 
 .tosensei .section__btn::after {
@@ -999,6 +1417,12 @@ template {
   padding-top: 80px;
 }
 
+@media screen and (max-width: 767px) {
+  .teachers .sub__ttl {
+    padding-top: 60px;
+  }
+}
+
 .teachers .teachers__content {
   width: 760px;
   height: 270px;
@@ -1009,6 +1433,20 @@ template {
   text-align: center;
   -webkit-box-shadow: -10px 10px 15px -10px rgba(0, 0, 0, 0.5);
           box-shadow: -10px 10px 15px -10px rgba(0, 0, 0, 0.5);
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 1179px) {
+  .teachers .teachers__content {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .teachers .teachers__content {
+    width: 300px;
+    height: 360px;
+  }
 }
 
 .teachers .teachers__content-ttl {
@@ -1016,6 +1454,18 @@ template {
   font-size: 24px;
   color: #444;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media screen and (max-width: 1179px) {
+  .teachers .teachers__content-ttl {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .teachers .teachers__content-ttl {
+    font-size: 14px;
+  }
 }
 
 .teachers .teachers__content-txt {
@@ -1026,6 +1476,18 @@ template {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@media screen and (max-width: 1179px) {
+  .teachers .teachers__content-txt {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .teachers .teachers__content-txt {
+    font-size: 11px;
+  }
+}
+
 .teachers .section__ttl {
   display: inline-block;
   font-size: 36px;
@@ -1034,6 +1496,12 @@ template {
   color: #444;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1179px) {
+  .teachers .section__ttl {
+    font-size: 24px;
+  }
 }
 
 .teachers .section__btn {
@@ -1052,6 +1520,14 @@ template {
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 1179px) {
+  .teachers .section__btn {
+    font-size: 12px;
+    width: 120px;
+    height: 35px;
+  }
+}
+
 .teachers .section__btn::before {
   position: absolute;
   content: "▲";
@@ -1062,6 +1538,13 @@ template {
   top: 11px;
   left: 105px;
   z-index: 100;
+}
+
+@media screen and (max-width: 1179px) {
+  .teachers .section__btn::before {
+    font-size: 12px;
+    left: 90px;
+  }
 }
 
 .teachers .section__btn::after {
@@ -1111,6 +1594,12 @@ template {
   padding-top: 80px;
 }
 
+@media screen and (max-width: 767px) {
+  .fromus .sub__ttl {
+    padding-top: 60px;
+  }
+}
+
 .fromus .fromus__content {
   width: 760px;
   height: 310px;
@@ -1121,6 +1610,20 @@ template {
   text-align: center;
   -webkit-box-shadow: -10px 10px 15px -10px rgba(0, 0, 0, 0.5);
           box-shadow: -10px 10px 15px -10px rgba(0, 0, 0, 0.5);
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 1179px) {
+  .fromus .fromus__content {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fromus .fromus__content {
+    width: 300px;
+    height: 380px;
+  }
 }
 
 .fromus .fromus__content-ttl {
@@ -1128,6 +1631,18 @@ template {
   font-size: 24px;
   color: #444;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+@media screen and (max-width: 1179px) {
+  .fromus .fromus__content-ttl {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fromus .fromus__content-ttl {
+    font-size: 14px;
+  }
 }
 
 .fromus .fromus__content-txt {
@@ -1138,6 +1653,18 @@ template {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@media screen and (max-width: 1179px) {
+  .fromus .fromus__content-txt {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fromus .fromus__content-txt {
+    font-size: 11px;
+  }
+}
+
 .fromus .section__ttl {
   display: inline-block;
   font-size: 36px;
@@ -1146,6 +1673,12 @@ template {
   color: #444;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1179px) {
+  .fromus .section__ttl {
+    font-size: 24px;
+  }
 }
 
 .fromus .section__btn {
@@ -1164,6 +1697,14 @@ template {
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 1179px) {
+  .fromus .section__btn {
+    font-size: 12px;
+    width: 120px;
+    height: 35px;
+  }
+}
+
 .fromus .section__btn::before {
   position: absolute;
   content: "▲";
@@ -1174,6 +1715,13 @@ template {
   top: 11px;
   left: 105px;
   z-index: 100;
+}
+
+@media screen and (max-width: 1179px) {
+  .fromus .section__btn::before {
+    font-size: 12px;
+    left: 90px;
+  }
 }
 
 .fromus .section__btn::after {
@@ -1231,6 +1779,12 @@ template {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  .note-member .section__ttl {
+    font-size: 28px;
+  }
+}
+
 .note-member .note-member__content {
   width: 900px;
   margin: 80px auto 0;
@@ -1245,6 +1799,18 @@ template {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1179px) {
+  .note-member .note-member__content {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .note-member .note-member__content {
+    width: 300px;
+  }
 }
 
 .note-member .note-member__item {
@@ -1342,6 +1908,12 @@ template {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  .note-teacher .section__ttl {
+    font-size: 28px;
+  }
+}
+
 .note-teacher .teacher__item {
   width: 200px;
   height: 200px;
@@ -1387,6 +1959,18 @@ template {
           box-shadow: -10px 10px 15px -10px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 1179px) {
+  .note-teacher .message__box {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .note-teacher .message__box {
+    width: 300px;
+  }
+}
+
 .note-teacher .message__box__name {
   padding: 5px 10px 5px;
   margin-left: 5px;
@@ -1398,6 +1982,30 @@ template {
 .note-teacher .message__box__txt {
   padding-top: 10px;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+.note-teacher .message-02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .note-teacher .message-02 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .note-teacher .fadeIn_item.offs,
@@ -1439,6 +2047,12 @@ template {
   color: #444;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .section__ttl {
+    font-size: 28px;
+  }
 }
 
 .message {
@@ -1555,6 +2169,12 @@ template {
   color: #444;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .section__ttl {
+    font-size: 28px;
+  }
 }
 
 .note-message {

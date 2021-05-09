@@ -19,6 +19,12 @@
     width: 80px;
     height: 40px;
     margin: 10px 40px;
+    @include mq(sp){
+      width: 60px;
+      height: 30px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
   }
   nav{
     display: inline-block;
@@ -49,5 +55,88 @@
     box-sizing: border-box;
     border-top: 2px solid #88c9ff;
     border-bottom: 2px solid #88c9ff;
+  }
+
+  // ハンバーガーメニュー
+  .hamburger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .h-span{
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: #333;
+    position: absolute;
+    right: 20px;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .hamburger:hover .h-span:nth-child(2) {
+    left: 15px;
+  }
+  .hamburger .h-span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger .h-span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger .h-span:nth-child(3) {
+    top: 30px;
+  }
+  .hamburger.active .h-span:nth-child(1) {
+    top: 20px;
+    transform: rotate(45deg);
+  }
+  .hamburger.active .h-span:nth-child(2) {
+    right: 60px;
+    opacity: 0;
+  }
+  .hamburger.active .h-span:nth-child(3) {
+    top: 20px;
+    transform: rotate(-45deg);
+  }
+  body.hidden {
+    overflow: hidden;
+  }
+  @include mq(tab){
+    .header__nav {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: 998;
+      background: #fff;
+      display: none;
+    }
+    nav{
+      position: absolute;
+      content: "";
+      top: 65%;
+      left: 52%;
+      transform: translate(-65%,-52%);
+      height: 100%;
+      text-align: center;
+    }
+    .header__list{
+      display: block;
+      margin: 0 auto;
+      line-height: 60px;
+    }
+    .nav__link{
+      z-index: 1000;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+  @include mq(pc){
+    .header-nav {
+      display: block !important;
+    }
   }
 }

@@ -1,6 +1,7 @@
 .mv{
   width: 100%;
   height: 600px;
+  position: relative;
   .site__ttl{
     font-size: 30px;
     color: #444;
@@ -9,8 +10,19 @@
     top: 30%;
     left: 45%;
     transform: translate(-30%,-45%);
-    // margin-top: 7%;
     font-family: $font_ja;
+    @include mq(tab){
+      top: 28%;
+      left: 43%;
+      transform: translate(-28%,-43%);
+      font-size: 20px;
+      }
+      @include mq(sp){
+        top: 38%;
+        left: 45%;
+        transform: translate(-38%,-45%);
+        font-size: 16px;
+      }
   }
   .mv__ttl{
     font-size: 100px;
@@ -21,9 +33,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    // margin-top: 6%;
     letter-spacing: 0.1em;
     font-family: $font_ja;
+    @include mq(tab){
+      size: 60px;
+      }
+      @include mq(sp){
+        font-size: 50px;
+      }
   }
   .mv__date{
     font-size: 24px;
@@ -34,8 +51,16 @@
     top: 70%;
     left: 52%;
     transform: translate(-70%,-52%);
-    // margin-top: 6%;
     font-family: $font_ja;
+    @include mq(tab){
+      font-size: 18px;
+      }
+      @include mq(sp){
+        top: 61%;
+        left: 52%;
+        transform: translate(-61%,-52%);
+        font-size: 16px;
+      }
   }
   .fadein {
     opacity: 0;
@@ -56,6 +81,14 @@
     height: 200px;
     border-radius: 50%;
     z-index: -1;
+    @include mq(tab){
+      width: 140px;
+      height: 140px;
+      }
+      @include mq(sp){
+        width: 70px;
+        height: 70px;
+      }
   }
   .c01{
     position: absolute;
@@ -64,6 +97,16 @@
     left: 8%;
     transform: translate(-36%,-8%);
     box-shadow:0px 0px 30px rgb(255, 166, 166);
+    @include mq(tab){
+      top: 40%;
+      left: 8%;
+      transform: translate(-40%,-8%);
+      }
+      @include mq(sp){
+        top: 44%;
+        left: 9%;
+        transform: translate(-44%,-9%);
+      }
   }
   .c02{
     background: rgba(255, 203, 154, 0.9);
@@ -72,6 +115,16 @@
     left: 22%;
     transform: translate(-40%,-20%);
     box-shadow:0px 0px 30px rgb(255, 203, 154);
+    @include mq(tab){
+      top: 43%;
+      left: 22%;
+      transform: translate(-43%,-22%);
+      }
+      @include mq(sp){
+        top: 46%;
+        left: 22%;
+        transform: translate(-46%,-22%);
+      }
   }
   .c03{
     background: rgba(255, 248, 183, 0.9);
@@ -80,6 +133,16 @@
     left: 36%;
     transform: translate(-45%,-36%);
     box-shadow:0px 0px 30px rgb(255, 248, 183);
+    @include mq(tab){
+      top: 46%;
+      left: 36%;
+      transform: translate(-46%,-36%);
+      }
+      @include mq(sp){
+        top: 48%;
+        left: 36%;
+        transform: translate(-48%,-36%);
+      }
   }
   .c04{
     background: rgba(203, 241, 203, 0.8);
@@ -96,6 +159,16 @@
     left: 64%;
     transform: translate(-53%,-64%);
     box-shadow:0px 0px 30px rgb(193, 253, 255);
+    @include mq(tab){
+      top: 54%;
+      left: 64%;
+      transform: translate(-54%,-64%);
+      }
+      @include mq(sp){
+        top: 52%;
+        left: 64%;
+        transform: translate(-52%,-64%);
+      }
   }
   .c06{
     background: rgba(161, 205, 255, 0.8);
@@ -104,6 +177,16 @@
     left: 78%;
     transform: translate(-58%,-78%);
     box-shadow:0px 0px 30px rgb(161, 205, 255);
+    @include mq(tab){
+      top: 57%;
+      left: 78%;
+      transform: translate(-57%,-78%);
+      }
+      @include mq(sp){
+        top: 54%;
+        left: 77%;
+        transform: translate(-54%,-77%);
+      }
   }
   .c07{
     background: rgba(227, 155, 255, 0.8);
@@ -112,6 +195,16 @@
     left: 92%;
     transform: translate(-63%,-92%);
     box-shadow:0px 0px 30px rgb(227, 155, 255);
+    @include mq(tab){
+      top: 60%;
+      left: 92%;
+      transform: translate(-60%,-92%);
+      }
+      @include mq(sp){
+        top: 56%;
+        left: 90%;
+        transform: translate(-56%,-90%);
+      }
   }
   &__list{
     display: flex;

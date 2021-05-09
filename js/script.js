@@ -64,3 +64,17 @@ $(function(){
   });// end scroll
 
 });
+
+// ハンバーガーメニュー
+$(".hamburger").click(function () {
+
+  $(".header__nav").fadeToggle();
+  $(this).toggleClass('active');
+
+  $("body").toggleClass('hidden');
+});
+
+// mvアニメーションの時差指定
+$(document).ready(function(){
+  setTimeout(function(){ $('.mv-wave').fadeOut(2000)}, 5500);
+  });

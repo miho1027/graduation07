@@ -17,6 +17,9 @@
   color: #444;
   font-family: $font_en;
   font-weight: bold;
+  @include mq(sp){
+    font-size: 28px;
+    }
 }
 .teacher__item{
   width: 200px;
@@ -47,6 +50,12 @@
       padding: 10px 30px 20px;
       font-size: 14px;
       box-shadow: -10px 10px 15px -10px rgba(0,0,0,0.5);
+      @include mq(tab){
+        width: 450px;
+        }
+        @include mq(sp){
+          width: 300px;
+          }
       &__name{
           padding: 5px 10px 5px;
           margin-left: 5px;
@@ -60,6 +69,16 @@
       }
       }
   }
+.message-02{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px;
+  @include mq(sp){
+    flex-direction: column-reverse;
+    }
+}
   .fadeIn_item{
     &.offs,
     .offs &{
